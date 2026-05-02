@@ -38,9 +38,11 @@ export default function LoginPage() {
         <div className="flex flex-col items-center gap-2">
           <div className="flex items-center gap-2 text-primary">
             <TrendingUp className="h-8 w-8" />
-            <span className="text-2xl font-bold text-foreground">Finanças</span>
           </div>
-          <p className="text-muted-foreground text-sm">Gerencie suas finanças com simplicidade</p>
+          <div className="text-center">
+            <h1 className="text-2xl font-bold text-foreground">Rotina Financeira do Rafael</h1>
+            <p className="text-muted-foreground text-sm mt-1">Gerencie suas finanças com simplicidade</p>
+          </div>
         </div>
         <Card>
           <CardHeader>
