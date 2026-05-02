@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(C:\\\\Users\\\\Usuario\\\\.claude\\\\skills\\\\brainstorming\\\\scripts\\\\start-server.sh --project-dir \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\")",
+      "Bash(bash \"/mnt/c/Users/Usuario/.claude/skills/brainstorming/scripts/start-server.sh\" --project-dir \"/mnt/c/Users/Usuario/Desktop/App_Financas\")",
+      "Bash(node \"C:/Users/Usuario/.claude/skills/brainstorming/scripts/server.cjs\" --project-dir \"C:/Users/Usuario/Desktop/App_Financas\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\docs\\\\superpowers\\\\specs\")",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npm --version)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --yes)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir=false --import-alias=\"@/*\" --yes --name=financas-pessoais)",
+      "Bash(npm install *)",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\components\\\\ui\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\components\\\\dashboard\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\components\\\\transactions\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\components\\\\layout\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\lib\\\\supabase\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\lib\\\\actions\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\types\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\lib\\\\hooks\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(auth\\)\\\\login\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(auth\\)\\\\register\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(dashboard\\)\\\\transactions\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(dashboard\\)\\\\categories\")",
+      "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\supabase\")",
+      "Bash(npm run *)"
+    ]
+  }
+}
