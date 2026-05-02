@@ -26,7 +26,10 @@
       "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(dashboard\\)\\\\transactions\")",
       "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\app\\\\\\(dashboard\\)\\\\categories\")",
       "PowerShell(New-Item -ItemType Directory -Force -Path \"c:\\\\Users\\\\Usuario\\\\Desktop\\\\App_Financas\\\\supabase\")",
-      "Bash(npm run *)"
+      "Bash(npm run *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
     ]
   }
 }

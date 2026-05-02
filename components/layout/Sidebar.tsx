@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { LayoutDashboard, ArrowLeftRight, Tag, LogOut, TrendingUp, Menu, X } from "lucide-react";
+import { LayoutDashboard, ArrowLeftRight, Tag, LogOut, TrendingUp, Menu, X, Sun, Moon } from "lucide-react";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { logout } from "@/lib/actions/auth";
@@ -38,6 +39,22 @@ function NavLinks({ onClick }: { onClick?: () => void }) {
   );
 }
 
+function ThemeToggle() {
+  const { theme, setTheme } = useTheme();
+  const isDark = theme === "dark";
+  return (
+    <Button
+      variant="ghost"
+      size="sm"
+      onClick={() => setTheme(isDark ? "light" : "dark")}
+      className="w-full justify-start gap-3 text-muted-foreground hover:text-foreground"
+    >
+      {isDark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+      {isDark ? "Modo claro" : "Modo escuro"}
+    </Button>
+  );
+}
+
 export function Sidebar() {
   return (
     <aside className="hidden lg:flex w-60 min-h-screen flex-col bg-card border-r border-border p-4">
@@ -46,12 +63,15 @@ export function Sidebar() {
         <span className="font-bold text-lg">Finanças</span>
       </div>
       <NavLinks />
-      <form action={logout}>
-        <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-3 text-muted-foreground hover:text-foreground mt-2">
-          <LogOut className="h-4 w-4" />
-          Sair
-        </Button>
-      </form>
+      <div className="mt-2 flex flex-col gap-1">
+        <ThemeToggle />
+        <form action={logout}>
+          <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-3 text-muted-foreground hover:text-foreground">
+            <LogOut className="h-4 w-4" />
+            Sair
+          </Button>
+        </form>
+      </div>
     </aside>
   );
 }
@@ -83,12 +103,15 @@ export function MobileHeader() {
               </Button>
             </div>
             <NavLinks onClick={() => setOpen(false)} />
-            <form action={logout}>
-              <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-3 text-muted-foreground hover:text-foreground mt-2">
-                <LogOut className="h-4 w-4" />
-                Sair
-              </Button>
-            </form>
+            <div className="mt-2 flex flex-col gap-1">
+              <ThemeToggle />
+              <form action={logout}>
+                <Button variant="ghost" size="sm" type="submit" className="w-full justify-start gap-3 text-muted-foreground hover:text-foreground">
+                  <LogOut className="h-4 w-4" />
+                  Sair
+                </Button>
+              </form>
+            </div>
           </aside>
         </div>
       )}
